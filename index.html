@@ -31,53 +31,33 @@
         <h2>Speaker Samples</h2>
         <p>Here we present audio samples for male and female speakers across different speaking styles.</p>
 
-        <!-- Male Speaker Samples -->
-        <h3>Male Speaker Samples</h3>
-        <div class='speaking-styles'>
-            <h4>Style: Default</h4>
-            <div class='playlist'>
-                <div class='labeled-audio'><audio preload='metadata' controls><source src='GeneratedSamples/SynSpeech25/sample_male_1040_default.wav' type='audio/mpeg'></audio></div>
-            </div>
-
-            <h4>Style: Friendly</h4>
-            <div class='playlist'>
-                <div class='labeled-audio'><audio preload='metadata' controls><source src='GeneratedSamples/SynSpeech25/sample_male_1040_friendly.wav' type='audio/mpeg'></audio></div>
-            </div>
-
-            <h4>Style: Sad</h4>
-            <div class='playlist'>
-                <div class='labeled-audio'><audio preload='metadata' controls><source src='GeneratedSamples/SynSpeech25/sample_male_1040_sad.wav' type='audio/mpeg'></audio></div>
-            </div>
-
-            <h4>Style: Whispering</h4>
-            <div class='playlist'>
-                <div class='labeled-audio'><audio preload='metadata' controls><source src='GeneratedSamples/SynSpeech25/sample_male_1040_whispering.wav' type='audio/mpeg'></audio></div>
-            </div>
-        </div>
-
-        <!-- Female Speaker Samples -->
-        <h3>Female Speaker Samples</h3>
-        <div class='speaking-styles'>
-            <h4>Style: Default</h4>
-            <div class='playlist'>
-                <div class='labeled-audio'><audio preload='metadata' controls><source src='GeneratedSamples/SynSpeech25/sample_female_7178_default.wav' type='audio/mpeg'></audio></div>
-            </div>
-
-            <h4>Style: Friendly</h4>
-            <div class='playlist'>
-                <div class='labeled-audio'><audio preload='metadata' controls><source src='GeneratedSamples/SynSpeech25/sample_female_7178_friendly.wav' type='audio/mpeg'></audio></div>
-            </div>
-
-            <h4>Style: Sad</h4>
-            <div class='playlist'>
-                <div class='labeled-audio'><audio preload='metadata' controls><source src='GeneratedSamples/SynSpeech25/sample_female_7178_sad.wav' type='audio/mpeg'></audio></div>
-            </div>
-
-            <h4>Style: Whispering</h4>
-            <div class='playlist'>
-                <div class='labeled-audio'><audio preload='metadata' controls><source src='GeneratedSamples/SynSpeech25/sample_female_7178_whispering.wav' type='audio/mpeg'></audio></div>
-            </div>
-        </div>
+        <table>
+            <tr>
+                <th>Speaker</th>
+                <th>Default</th>
+                <th>Friendly</th>
+                <th>Sad</th>
+                <th>Whispering</th>
+            </tr>
+            
+            <!-- Male Speaker Row -->
+            <tr>
+                <td>Male</td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/SynSpeech25/sample_male_1040_default.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/SynSpeech25/sample_male_1040_friendly.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/SynSpeech25/sample_male_1040_sad.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/SynSpeech25/sample_male_1040_whispering.wav' type='audio/mpeg'></audio></td>
+            </tr>
+            
+            <!-- Female Speaker Row -->
+            <tr>
+                <td>Female</td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/SynSpeech25/sample_female_7178_default.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/SynSpeech25/sample_female_7178_friendly.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/SynSpeech25/sample_female_7178_sad.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/SynSpeech25/sample_female_7178_whispering.wav' type='audio/mpeg'></audio></td>
+            </tr>
+        </table>
     </div>
 
     <hr>
@@ -86,14 +66,14 @@
     <div id='synspeech' class='section'>
         <h2>SynSpeech Dataset Versions</h2>
         <p>
-            To enable standardized evaluation of disentangled speech representation learning, we created SynSpeech, a large-scale synthetic speech dataset comprising over 160,000 utterances generated using state-of-the-art neural text-to-speech models. SynSpeech includes ground truth annotations for key generative factors: speaker identity, spoken text, prosody (pitch and loudness variations), and emotional tone (neutral, friendly, angry).
+            To enable standardized evaluation of disentangled speech representation learning, we created SynSpeech, a large-scale synthetic speech dataset comprising over 160,000 utterances generated using state-of-the-art neural text-to-speech models. SynSpeech includes ground truth annotations for key generative factors: speaker identity, spoken text, prosody (pitch and loudness variations), and emotional tone (neutral, happy, angry).
             By varying one factor at a time, SynSpeech enables models to isolate individual sources of variation effectively. The dataset is open-sourced to facilitate research and standardized evaluation in speech disentanglement.
         </p>
         <p>
             SynSpeech includes controlled variations in content, speaker identity, and speaking style. Using the GPT-4 Large Language Model, we generated 500 diverse sentences across discourse contexts, from casual dialogue to scientific explanation. The speaker set includes 249 speakers from the LibriSpeech100 dataset, balanced across gender. Each sentence is synthesized for all speaker profiles to create structured combinations of speaker identity and content.
         </p>
         <p>
-            For additional diversity, we employed the OpenVoice toolkit to synthesize each sentence across four distinct styles: default, friendly, sad, and whispering, resulting in 498,000 samples at a 16kHz rate. SynSpeech thus enables detailed evaluation of disentangling complex attributes in synthetic speech data.
+            For additional diversity, we employed the OpenVoice toolkit to synthesize each sentence across four distinct styles: default, happy, sad, and whispering, resulting in 498,000 samples at a 16kHz rate. SynSpeech thus enables detailed evaluation of disentangling complex attributes in synthetic speech data.
         </p>
         <h3>Dataset Versions</h3>
         <table>
