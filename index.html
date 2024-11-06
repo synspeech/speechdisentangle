@@ -15,7 +15,7 @@
         <p>Audio samples accompanying the paper <i>Learning Disentangled Speech Representations</i>.</p>
         <h4>Contents:</h4>
         <ul class='toc'>
-            <li><a href='#synspeech'>SynSpeech Dataset Versions</a></li>
+            <li><a href='#synspeech'>SynSpeech Dataset</a></li>
             <li><a href='#rave_analysis'>RAVE Analysis</a></li>
             <li><a href='#chimpanzee_analysis'>Chimpanzee Analysis</a></li>
         </ul>
@@ -23,51 +23,88 @@
 
     <hr>
 
-    <!-- SynSpeech Dataset Versions -->
+    <!-- SynSpeech Dataset Description -->
     <div id='synspeech' class='section'>
-        <h2>SynSpeech Dataset Versions</h2>
-        <p>Introducing the SynSpeech dataset in three distinct versions to support research in disentangled speech representation learning.</p>
+        <h2>SynSpeech Dataset</h2>
+        <p>
+            To enable standardized evaluation of disentangled speech representation learning, we created SynSpeech, a large-scale synthetic speech dataset comprising over 160,000 utterances generated using state-of-the-art neural text-to-speech models. SynSpeech includes ground truth annotations for key generative factors: speaker identity, spoken text, prosody (pitch and loudness variations), and emotional tone (neutral, happy, angry).
+            By varying one factor at a time, SynSpeech enables models to isolate individual sources of variation effectively. The dataset is open-sourced to facilitate research and standardized evaluation in speech disentanglement.
+        </p>
+        <p>
+            SynSpeech includes controlled variations in content, speaker identity, and speaking style. Using the GPT-4 Large Language Model, we generated 500 diverse sentences across discourse contexts, from casual dialogue to scientific explanation. The speaker set includes 249 speakers from the LibriSpeech100 dataset, balanced across gender. Each sentence is synthesized for all speaker profiles to create structured combinations of speaker identity and content.
+        </p>
+        <p>
+            For additional diversity, we employed the OpenVoice toolkit to synthesize each sentence across four distinct styles: default, happy, sad, and whispering, resulting in 498,000 samples at a 16kHz rate. SynSpeech thus enables detailed evaluation of disentangling complex attributes in synthetic speech data.
+        </p>
+        <h3>Dataset Versions</h3>
+        <table>
+            <tr>
+                <th>Version</th>
+                <th>Speakers</th>
+                <th>Contents</th>
+                <th>Styles</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Small</td>
+                <td>50</td>
+                <td>500</td>
+                <td>1</td>
+                <td>25,000</td>
+            </tr>
+            <tr>
+                <td>Medium</td>
+                <td>25</td>
+                <td>500</td>
+                <td>4</td>
+                <td>50,000</td>
+            </tr>
+            <tr>
+                <td>Large</td>
+                <td>249</td>
+                <td>110</td>
+                <td>4</td>
+                <td>109,560</td>
+            </tr>
+        </table>
+
+        <!-- SynSpeech Dataset Versions - Originals vs Reconstructions -->
+        <h3>SynSpeech Dataset Versions</h3>
         
         <!-- Version 1 -->
-        <h3>Version 1 - Originals vs Reconstructions</h3>
+        <h4>Version 1 - Originals vs Reconstructions</h4>
         <div class='playlist'>
             <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/blizzard_unconditional/sample-0.mp3' type='audio/mpeg'></audio></div>
             <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/blizzard_biased/sample-0.mp3' type='audio/mpeg'></audio></div>
-            <!-- Additional samples as needed -->
         </div>
         
-        <h3>Version 1 - Generated Samples</h3>
+        <h4>Version 1 - Generated Samples</h4>
         <div class='playlist'>
             <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/blizzard_primed/sample-0.mp3' type='audio/mpeg'></audio></div>
-            <!-- Additional generated samples -->
         </div>
 
-        <!-- Repeat for Versions 2 and 3 with similar structure -->
+        <!-- Repeat for Versions 2 and 3 -->
         
-        <h3>Version 2 - Originals vs Reconstructions</h3>
+        <h4>Version 2 - Originals vs Reconstructions</h4>
         <div class='playlist'>
             <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/voxceleb2_unconditional/sample-0.mp3' type='audio/mpeg'></audio></div>
             <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/voxceleb2_unconditional/sample-1.mp3' type='audio/mpeg'></audio></div>
-            <!-- Additional samples for Version 2 -->
         </div>
         
-        <h3>Version 2 - Generated Samples</h3>
+        <h4>Version 2 - Generated Samples</h4>
         <div class='playlist'>
             <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/voxceleb2_unconditional/sample-2.mp3' type='audio/mpeg'></audio></div>
-            <!-- Additional generated samples for Version 2 -->
         </div>
         
-        <h3>Version 3 - Originals vs Reconstructions</h3>
+        <h4>Version 3 - Originals vs Reconstructions</h4>
         <div class='playlist'>
             <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/music/sample-0.mp3' type='audio/mpeg'></audio></div>
             <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/music/sample-1.mp3' type='audio/mpeg'></audio></div>
-            <!-- Additional samples for Version 3 -->
         </div>
         
-        <h3>Version 3 - Generated Samples</h3>
+        <h4>Version 3 - Generated Samples</h4>
         <div class='playlist'>
             <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/music_primed/sample-0.mp3' type='audio/mpeg'></audio></div>
-            <!-- Additional generated samples for Version 3 -->
         </div>
     </div>
 
@@ -82,13 +119,11 @@
         <div class='playlist'>
             <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/blizzard_tts_unbiased/sample-0/real.mp3' type='audio/mpeg'></audio></div>
             <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/blizzard_tts_unbiased/sample-0/fake-0.mp3' type='audio/mpeg'></audio></div>
-            <!-- Additional RAVE originals vs reconstructions samples -->
         </div>
         
         <h3>Generated Samples</h3>
         <div class='playlist'>
             <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/blizzard_tts_primed/sample/sample-0.mp3' type='audio/mpeg'></audio></div>
-            <!-- Additional RAVE generated samples -->
         </div>
     </div>
 
@@ -103,13 +138,11 @@
         <div class='playlist'>
             <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/wavenet_unconditional/blizzard/sample-0.mp3' type='audio/mpeg'></audio></div>
             <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/wavenet_unconditional/blizzard/sample-1.mp3' type='audio/mpeg'></audio></div>
-            <!-- Additional chimpanzee originals vs reconstructions samples -->
         </div>
         
         <h3>Generated Samples</h3>
         <div class='playlist'>
             <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/wavenet_primed/blizzard/sample-0.mp3' type='audio/mpeg'></audio></div>
-            <!-- Additional chimpanzee generated samples -->
         </div>
     </div>
 
