@@ -18,7 +18,7 @@
         <h4>Contents:</h4>
         <ul class='toc'>
             <li><a href='#synspeech'>SynSpeech Dataset Versions</a></li>
-            <li><a href='#speaker_samples'>Speaker Samples</a></li>
+            <li><a href='#speaker_samples'>Generated Speech Samples</a></li>
             <li><a href='#rave_analysis_small'>Speech Representation Learning with RAVE on Small Dataset</a></li>
             <li><a href='#rave_analysis_medium'>Speech Representation Learning with RAVE on Medium Dataset</a></li>
             <li><a href='#chimpanzee_analysis'>Speech Representation Learning with RAVE on Chimpanzee Dataset</a></li>
@@ -50,7 +50,7 @@
                 <td>500</td>
                 <td>1</td>
                 <td>25,000</td>
-                <td><a href="download_link_small.zip">Download (500MB)</a></td>
+                <td><a href="#download_link_small.zip">Download (500MB)</a></td>
             </tr>
             <tr>
                 <td>Medium</td>
@@ -58,7 +58,7 @@
                 <td>500</td>
                 <td>4</td>
                 <td>50,000</td>
-                <td><a href="download_link_medium.zip">Download (1GB)</a></td>
+                <td><a href="#download_link_medium.zip">Download (1GB)</a></td>
             </tr>
             <tr>
                 <td>Large</td>
@@ -66,7 +66,7 @@
                 <td>110</td>
                 <td>4</td>
                 <td>109,560</td>
-                <td><a href="download_link_large.zip">Download (2.5GB)</a></td>
+                <td><a href="#download_link_large.zip">Download (2.5GB)</a></td>
             </tr>
         </table>
     </div>
@@ -76,7 +76,7 @@
     <!-- Speaker Samples Section -->
         <!-- Speaker Samples Section -->
         <div id='speaker_samples' class='section'>
-            <h2>Speaker Samples</h2>
+            <h2>Generated Speech Samples</h2>
             <p>Here we present audio samples for male and female speakers across different speaking styles.</p>
     
             <table>
@@ -114,6 +114,13 @@
     <div id='rave_analysis_small' class='section'>
         <h2>Speech Representation Learning with RAVE on Small Dataset</h2>
         <p>Demonstrates speech representation learning using RAVE, showcasing original, reconstructed, and generated samples.</p>
+
+    <!-- Spectrogram Visualization -->
+    <div class='spectrogram'>
+        <h3>Spectrogram Comparison</h3>
+        <p>Visualization of the original, reconstructed, and generated audio for comparison.</p>
+        <img src="Figures/waveform_spec_batch0_sample0_waveform_spectrograms.png" alt="Spectrogram Comparison: Original, Reconstructed, Generated"  class="spectrogram-img"/>
+    </div>
 
         <table>
             <tr>

@@ -161,3 +161,10 @@ p {
     margin: 0px 20%;
     margin-top: 30px;
 }
+
+.spectrogram-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
