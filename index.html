@@ -107,41 +107,102 @@
             </tr>
         </table>
 
-        <!-- SynSpeech Dataset Versions - Originals vs Reconstructions -->
-        <h3>SynSpeech Dataset Versions</h3>
-        
-        <!-- Version 1 -->
-        <h4>Version 1 - Originals vs Reconstructions</h4>
-        <div class='playlist'>
-            <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/blizzard_unconditional/sample-0.mp3' type='audio/mpeg'></audio></div>
-            <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/blizzard_biased/sample-0.mp3' type='audio/mpeg'></audio></div>
-        </div>
-        
-        <h4>Version 1 - Generated Samples</h4>
-        <div class='playlist'>
-            <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/blizzard_primed/sample-0.mp3' type='audio/mpeg'></audio></div>
-        </div>
-
-        <!-- Repeat for Versions 2 and 3 -->
-    </div>
-
-    <hr>
-
-    <!-- RAVE Analysis -->
+     <!-- RAVE Analysis -->
     <div id='rave_analysis' class='section'>
-        <h2>Speech Representation Learning with RAVE</h2>
-        <p>This section demonstrates speech representation learning performed using RAVE.</p>
+        <h2>Speech Representation Learning with RAVE on Small dataset</h2>
+        <p>This section demonstrates speech representation learning performed using RAVE, showcasing original, reconstructed, and generated samples.</p>
 
-        <h3>Originals vs Reconstructions</h3>
-        <div class='playlist'>
-            <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/blizzard_tts_unbiased/sample-0/real.mp3' type='audio/mpeg'></audio></div>
-            <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/blizzard_tts_unbiased/sample-0/fake-0.mp3' type='audio/mpeg'></audio></div>
-        </div>
-        
-        <h3>Generated Samples</h3>
-        <div class='playlist'>
-            <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/blizzard_tts_primed/sample/sample-0.mp3' type='audio/mpeg'></audio></div>
-        </div>
+        <table>
+            <tr>
+                <th>Original</th>
+                <th>Reconstructed</th>
+                <th>Generated</th>
+            </tr>
+            
+            <!-- Row 1 -->
+            <tr>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/original_batch0_sample0.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/reconstructed_batch0_sample0.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/generated_batch0_sample0.wav' type='audio/mpeg'></audio></td>
+            </tr>
+            <!-- Repeat for the next 15 rows -->
+            <tr>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/original_batch0_sample1.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/reconstructed_batch0_sample1.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/generated_batch0_sample1.wav' type='audio/mpeg'></audio></td>
+            </tr>
+            <tr>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/original_batch0_sample2.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/reconstructed_batch0_sample2.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/generated_batch0_sample2.wav' type='audio/mpeg'></audio></td>
+            </tr>
+            <tr>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/original_batch0_sample3.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/reconstructed_batch0_sample3.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/generated_batch0_sample3.wav' type='audio/mpeg'></audio></td>
+            </tr>
+            <tr>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/original_batch0_sample4.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/reconstructed_batch0_sample4.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/generated_batch0_sample4.wav' type='audio/mpeg'></audio></td>
+            </tr>
+            <tr>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/original_batch0_sample5.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/reconstructed_batch0_sample5.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/generated_batch0_sample5.wav' type='audio/mpeg'></audio></td>
+            </tr>
+            <tr>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/original_batch0_sample6.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/reconstructed_batch0_sample6.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/generated_batch0_sample6.wav' type='audio/mpeg'></audio></td>
+            </tr>
+            <tr>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/original_batch0_sample7.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/reconstructed_batch0_sample7.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/generated_batch0_sample7.wav' type='audio/mpeg'></audio></td>
+            </tr>
+            <tr>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/original_batch0_sample8.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/reconstructed_batch0_sample8.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/generated_batch0_sample8.wav' type='audio/mpeg'></audio></td>
+            </tr>
+            <tr>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/original_batch0_sample9.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/reconstructed_batch0_sample9.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/generated_batch0_sample9.wav' type='audio/mpeg'></audio></td>
+            </tr>
+            <tr>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/original_batch0_sample10.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/reconstructed_batch0_sample10.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/generated_batch0_sample10.wav' type='audio/mpeg'></audio></td>
+            </tr>
+            <tr>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/original_batch0_sample11.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/reconstructed_batch0_sample11.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/generated_batch0_sample11.wav' type='audio/mpeg'></audio></td>
+            </tr>
+            <tr>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/original_batch0_sample12.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/reconstructed_batch0_sample12.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/generated_batch0_sample12.wav' type='audio/mpeg'></audio></td>
+            </tr>
+            <tr>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/original_batch0_sample13.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/reconstructed_batch0_sample13.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/generated_batch0_sample13.wav' type='audio/mpeg'></audio></td>
+            </tr>
+            <tr>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/original_batch0_sample14.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/reconstructed_batch0_sample14.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/generated_batch0_sample14.wav' type='audio/mpeg'></audio></td>
+            </tr>
+            <tr>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/original_batch0_sample15.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/reconstructed_batch0_sample15.wav' type='audio/mpeg'></audio></td>
+                <td><audio preload='metadata' controls><source src='GeneratedSamples/Samples/generated_batch0_sample15.wav' type='audio/mpeg'></audio></td>
+            </tr>
+            <!-- Additional rows can be added for other samples if available -->
+        </table>
     </div>
 
     <hr>
