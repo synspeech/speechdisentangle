@@ -168,3 +168,8 @@ p {
     display: block;
     margin: 0 auto;
 }
+
+/* Center the column headings */
+th {
+    text-align: center;
+}
