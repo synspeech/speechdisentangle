@@ -173,3 +173,22 @@ p {
 th {
     text-align: center;
 }
+
+.spectrogram-figure {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.spectrogram-img {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.spectrogram-caption {
+    font-size: 0.7em;
+    color: #555;
+    margin-top: 10px;
+    text-align: justify;
+}
