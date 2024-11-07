@@ -192,3 +192,17 @@ th {
     margin-top: 10px;
     text-align: justify;
 }
+
+.attribution em{
+    font-size: 0.7em;
+}
+.attribution a{
+    font-size: 0.99em;
+}
+
+.attribution{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
